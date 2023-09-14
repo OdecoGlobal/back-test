@@ -21,7 +21,7 @@ const MovieCard = (props) => {
                 </div>
 
                 <div className='absolute w-98 transition duration-150 ease-in bottom-0 text-base p-5 bg-black w-10 align-center opacity-0'>
-                    <AddFavourites /> {/* Render the FavouriteComponent */}
+                    <AddFavourites />
                 </div>
             </div>
         </div>

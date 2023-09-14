@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
+import Main from './Main';
 import './index.css';
 import './App.css';
 import AddFavourites from './AddFavourites';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
  
 
 function App() {
@@ -70,7 +72,13 @@ function App() {
         </div>
       </div>
 
-      <div className='movies grid grid-cols-5 mt-8'>
+      <div>
+          <Main/>
+      </div>
+
+  
+
+      <div className='movies grid grid-cols-4 mt-8 md:grid-cols-3'>
         {movies.map((movie) => (
           <MovieCard key={movie.id} {...movie} favouriteComponent = {AddFavourites}/>
         ))}
